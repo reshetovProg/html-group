@@ -1,0 +1,163 @@
+ @font-face {
+    font-family: Inter-Bold; /* Гарнитура шрифта */
+    src: url(fonts/Inter-Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+ @font-face {
+    font-family: Inter-Light; /* Гарнитура шрифта */
+    src: url(fonts/Inter-Light.ttf); /* Путь к файлу со шрифтом */
+   }
+
+*
+{
+	padding:0;
+	margin:0;
+	background-color: #171821;
+}
+header
+{
+	display:flex;
+	height: 89px;
+	justify-content: flex-end;
+}
+.logo
+{
+	position:absolute;
+	left:18px;
+	top:22px;
+	width: 75px;
+	height: 54px;
+	font-family: 'Inter-Bold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 54px;
+	color:#FFFFFF;
+	
+}
+.logo span
+{
+	color: #25D366;
+}
+
+.search_area .search_logo .circle
+{
+	position:absolute;
+	left: 200px;
+	top: 33px;
+	height: 20px;
+	width: 20px;
+	border: solid #B5BFD6 2px;
+	border-radius: 100%;
+
+}
+.search_area .search_logo .line
+{
+	position:absolute;
+	left: 218px;
+	top: 56px;
+	height:0px;
+	width: 8px;
+	border: solid #B5BFD6 1px;
+	transform: rotate(45deg);
+}
+
+.search_info
+{
+	position:absolute;
+	left: 234px;
+	top: 36px;
+	font-family: 'Inter-Light';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: #474B54;
+}
+
+.profile
+{
+	display:flex;
+	width: 297px;
+	height: 45px;
+	align-items: center;
+	margin-right:84px;
+	margin-top:21px;
+	color: #B5BFD6;
+	font-family: 'Inter-Light';
+	font-size: 16px;
+}
+
+.profile .bell
+{
+	margin-right:31px;
+}
+.profile .photo
+{
+	margin-right: 12px;
+}
+
+.profile .drop
+{
+	margin-left:36px;
+}
+
+hr
+{
+	border:none;
+	border-top: 1px solid #393636;
+}
+
+article
+{
+	display:flex;
+}
+.side_bar
+{
+	flex-shrink: 0;
+	width:126px;
+	height: 100vh;
+}
+
+.contacts
+{
+	flex-shrink: 0;
+	width:437px;
+	height: 100vh;
+	border-left: 1px solid #393636;
+	border-right: 1px solid #393636;
+}
+
+.message
+{
+	width:100%;
+}
+.shared
+{
+	flex-shrink: 0;
+	width: 420px;
+	height: 100vh;
+	border-left: 1px solid #393636;
+}
+.box1
+{
+	height: 135px;
+	border-bottom: 1px solid #393636;
+}
+
+@media screen and (max-width: 950px)
+{
+	.bell
+	{
+		visibility: hidden;
+	}
+	.photo
+	{
+		visibility: hidden;
+	}
+	.profile span
+	{
+		visibility: hidden;
+		
+	}
+}
